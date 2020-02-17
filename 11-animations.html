@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformations</title>
+    <!--  transformation은 모양 자체를 바꾸는 것.
+        회전시키거나 각도를 튼다거나 늘리고 줄이기 가능
+        transition이랑 같이 쓸 수도 있음. hover하면 모양 변하게 -->
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background: red;
+        animation: 1.5s scale-and-rotate-square /* infinite */ ease-out;
+      }
+      @keyframes scale-and-rotate-square {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+        100% {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

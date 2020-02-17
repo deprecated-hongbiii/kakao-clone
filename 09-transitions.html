@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transitions</title>
+    <!-- transition은 어떤 state가 바뀔 때 적용이 되는 것. 애니메이션처럼!
+    state에는 hover, active, focus, visited가 있다. -->
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+        font-size: 40px;
+        transition: all 0.5s ease-in-out;
+      }
+      .box:hover {
+        background-color: red;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      Text
+    </span>
+  </body>
+</html>
